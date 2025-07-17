@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// imports
+import Home from './pages/Home.jsx';
+import Farms from './components/Farms.jsx';
+import Foods from './components/Foods.jsx';
+import Gold from './components/Gold.jsx';
+import Contact from "./components/Contact.jsx";
+import Footer from './components/Footer.jsx';
+// react scroll
+import { Element } from 'react-scroll';
+import Expertise from './components/Expertise.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home />
+      <Element name = 'foods'>
+        <Expertise />
+      </Element>
+      <Foods />
+      <Gold />
+      <Farms />
+      <Contact />
+      <Footer />
     </div>
   );
 }
