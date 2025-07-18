@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/navLogo.png";
+import logo from "../assets/greenheaplogo.png";
 
 const Navbar = () => {
   return (
@@ -7,7 +7,7 @@ const Navbar = () => {
        
        <div className='px-4 container mx-auto'>
              <img
-        className='w-auto h-8 md:h-10'
+        className='w-auto h-32 md:h-24'
         src = {logo} alt = 'greenheap enterprise logo' />
        </div>
        
